@@ -7,18 +7,50 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
+    // MARK: View Properties
+    @State private var selection: Options = .New
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            // NavBar
+            navBar
+            
+            // Options
+            OptionsListView(selection: $selection)
+                .padding(.horizontal, 20)
+                .padding(.top, 30)
+            
+            // Drinks
+            
+            // TabBar
+            Spacer()
+            
         }
         .padding()
     }
 }
+ 
+extension ContentView{
+    var navBar: some View {
+        VStack(alignment: .leading, spacing: 34) {
+            HStack {
+                Spacer()
+                
+                Image(systemName: "app.dashed")
+                    .resizable()
+                    .frame(width: 40, height: 40)
+            }
+            
+            Text("It's amazing cocktails")
+                .font(.neue(.black, size: 48))
+        }
+        .padding(.horizontal, 20)
+    }
+}
 
+// MARK: - Previews
 #Preview {
     ContentView()
 }
