@@ -28,6 +28,7 @@
 		4B107AE82AE8741B001D53CD /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B107AE72AE8741B001D53CD /* Method.swift */; };
 		4B107AEA2AE87464001D53CD /* Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B107AE92AE87464001D53CD /* Difficulty.swift */; };
 		4B107AEC2AE8750A001D53CD /* Previews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B107AEB2AE8750A001D53CD /* Previews.swift */; };
+		4B107AEE2AE8776F001D53CD /* CocktailCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B107AED2AE8776F001D53CD /* CocktailCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		4B107AE72AE8741B001D53CD /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
 		4B107AE92AE87464001D53CD /* Difficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Difficulty.swift; sourceTree = "<group>"; };
 		4B107AEB2AE8750A001D53CD /* Previews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Previews.swift; sourceTree = "<group>"; };
+		4B107AED2AE8776F001D53CD /* CocktailCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 			children = (
 				4B107AE12AE85720001D53CD /* OptionsListView.swift */,
 				4B107AE32AE85C32001D53CD /* TabBarView.swift */,
+				4B107AED2AE8776F001D53CD /* CocktailCard.swift */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B107AE82AE8741B001D53CD /* Method.swift in Sources */,
+				4B107AEE2AE8776F001D53CD /* CocktailCard.swift in Sources */,
 				4B107AE62AE872EC001D53CD /* Cocktail.swift in Sources */,
 				4B107AE22AE85720001D53CD /* OptionsListView.swift in Sources */,
 				4B107AE02AE84EBB001D53CD /* Font.swift in Sources */,

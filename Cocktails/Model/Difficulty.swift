@@ -10,4 +10,8 @@ import Foundation
 enum Difficulty: String, Codable {
     case easy = "Easy"
     case medium = "Medium"
+    
+    var detail: String {
+        return "\(self.rawValue) preparation"
+    }
 }

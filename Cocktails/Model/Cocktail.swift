@@ -17,4 +17,8 @@ struct Cocktail: Codable, Identifiable {
     let description: String
     let ingredients: [String]
     let method: [Method]
+    
+    var simplifiedTime: String {
+        return time.replacingOccurrences(of: "Hands-on time ", with: "")
+    }
 }
