@@ -24,6 +24,9 @@
 		4B107AE02AE84EBB001D53CD /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B107ADF2AE84EBB001D53CD /* Font.swift */; };
 		4B107AE22AE85720001D53CD /* OptionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B107AE12AE85720001D53CD /* OptionsListView.swift */; };
 		4B107AE42AE85C32001D53CD /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B107AE32AE85C32001D53CD /* TabBarView.swift */; };
+		4B107AE62AE872EC001D53CD /* Cocktail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B107AE52AE872EC001D53CD /* Cocktail.swift */; };
+		4B107AE82AE8741B001D53CD /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B107AE72AE8741B001D53CD /* Method.swift */; };
+		4B107AEA2AE87464001D53CD /* Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B107AE92AE87464001D53CD /* Difficulty.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		4B107ADF2AE84EBB001D53CD /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		4B107AE12AE85720001D53CD /* OptionsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsListView.swift; sourceTree = "<group>"; };
 		4B107AE32AE85C32001D53CD /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		4B107AE52AE872EC001D53CD /* Cocktail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cocktail.swift; sourceTree = "<group>"; };
+		4B107AE72AE8741B001D53CD /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		4B107AE92AE87464001D53CD /* Difficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Difficulty.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,9 @@
 		4B107AC22AE84917001D53CD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4B107AE52AE872EC001D53CD /* Cocktail.swift */,
+				4B107AE92AE87464001D53CD /* Difficulty.swift */,
+				4B107AE72AE8741B001D53CD /* Method.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -267,9 +276,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B107AE82AE8741B001D53CD /* Method.swift in Sources */,
+				4B107AE62AE872EC001D53CD /* Cocktail.swift in Sources */,
 				4B107AE22AE85720001D53CD /* OptionsListView.swift in Sources */,
 				4B107AE02AE84EBB001D53CD /* Font.swift in Sources */,
 				4B107AB52AE846BF001D53CD /* ContentView.swift in Sources */,
+				4B107AEA2AE87464001D53CD /* Difficulty.swift in Sources */,
 				4B107AB32AE846BF001D53CD /* CocktailsApp.swift in Sources */,
 				4B107AE42AE85C32001D53CD /* TabBarView.swift in Sources */,
 				4B107ACA2AE84B14001D53CD /* Color.swift in Sources */,
