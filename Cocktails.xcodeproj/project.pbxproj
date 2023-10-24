@@ -51,9 +51,13 @@
 		4B107AB12AE846BF001D53CD /* Cocktails */ = {
 			isa = PBXGroup;
 			children = (
-				4B107AB22AE846BF001D53CD /* CocktailsApp.swift */,
-				4B107AB42AE846BF001D53CD /* ContentView.swift */,
-				4B107AB62AE846C2001D53CD /* Assets.xcassets */,
+				4B107AC02AE848EE001D53CD /* App */,
+				4B107AC12AE84909001D53CD /* Interactor */,
+				4B107AC22AE84917001D53CD /* Model */,
+				4B107AC32AE84921001D53CD /* ModelLogic */,
+				4B107AC42AE8492E001D53CD /* Resources */,
+				4B107AC52AE8493B001D53CD /* View */,
+				4B107AC62AE8494A001D53CD /* ViewModel */,
 				4B107AB82AE846C2001D53CD /* Preview Content */,
 			);
 			path = Cocktails;
@@ -65,6 +69,66 @@
 				4B107AB92AE846C2001D53CD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4B107AC02AE848EE001D53CD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4B107AB22AE846BF001D53CD /* CocktailsApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4B107AC12AE84909001D53CD /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		4B107AC22AE84917001D53CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4B107AC32AE84921001D53CD /* ModelLogic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ModelLogic;
+			sourceTree = "<group>";
+		};
+		4B107AC42AE8492E001D53CD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4B107AB62AE846C2001D53CD /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4B107AC52AE8493B001D53CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4B107AC72AE849F5001D53CD /* Components */,
+				4B107AB42AE846BF001D53CD /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4B107AC62AE8494A001D53CD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4B107AC72AE849F5001D53CD /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
