@@ -11,6 +11,7 @@ import SwiftUI
 struct ContentView: View {
     // MARK: View Properties
     @State private var selection: Options = .New
+    @State private var tabActive: Tab = .home
     
     var body: some View {
         VStack {
@@ -26,7 +27,7 @@ struct ContentView: View {
             
             // TabBar
             Spacer()
-            
+            TabBarView(selectedTab: $tabActive)
         }
         .padding()
     }
