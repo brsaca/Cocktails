@@ -8,8 +8,8 @@
 import SwiftUI
 
 extension Color {
-    static let cGreen = Color("cGreen")
-    static let cYellow = Color("cYellow")
-    static let cWhite = Color("cWhite")
-    static let cBlack = Color("cBlack")
+    static let tabbar = Color("cGreen")
+    static let button = Color("cYellow")
+    static let background = Color("cWhite")
+    static let text = Color("cBlack")
 }
