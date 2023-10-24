@@ -17,19 +17,20 @@ struct ContentView: View {
         VStack {
             // NavBar
             navBar
+                .padding(.horizontal, 20)
             
             // Options
             OptionsListView(selection: $selection)
-                .padding(.horizontal, 20)
-                .padding(.top, 30)
+                .padding(.horizontal, 40)
+                .padding(.top, 20)
             
             // Drinks
+            cocktailsList
+                .padding(.leading, 20)
             
             // TabBar
-            Spacer()
             TabBarView(selectedTab: $tabActive)
         }
-        .padding()
     }
 }
  
@@ -48,6 +49,16 @@ extension ContentView{
                 .font(.neue(.black, size: 48))
         }
         .padding(.horizontal, 20)
+    }
+    
+    var cocktailsList: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            LazyHStack(spacing: 20) {
+                ForEach(1..<6) { cocktailIndex in
+                    CocktailCard(cocktail: Cocktail.mock)
+                }
+            }
+        }
     }
 }
 
