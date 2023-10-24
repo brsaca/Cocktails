@@ -30,3 +30,25 @@ extension Cocktail {
                         )]
     )
 }
+
+struct ConnectionPreview: ConnectionInteractor {
+    func loadCocktails(completion: @escaping (Result<[Cocktail], Error>) -> Void) {
+        var url = URL.documentsDirectory.appendingPathComponent("Cocktails.json")
+
+        if !FileManager.default.fileExists(atPath: url.path) {
+            guard let bundledUrl = Bundle.main.url(forResource: "Cocktails", withExtension: "json") else {
+                completion(.failure(NSError(domain: "File not found in bundle", code: 0, userInfo: nil)))
+                return
+            }
+            url = bundledUrl
+        }
+
+        do {
+            let data = try Data(contentsOf: url)
+            let cocktails = try JSONDecoder().decode([Cocktail].self, from: data)
+            completion(.success(cocktails))
+        } catch {
+            completion(.failure(error))
+        }
+    }
+}
