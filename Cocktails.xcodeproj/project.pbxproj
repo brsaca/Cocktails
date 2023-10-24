@@ -12,6 +12,16 @@
 		4B107AB72AE846C2001D53CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B107AB62AE846C2001D53CD /* Assets.xcassets */; };
 		4B107ABA2AE846C2001D53CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B107AB92AE846C2001D53CD /* Preview Assets.xcassets */; };
 		4B107ACA2AE84B14001D53CD /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B107AC92AE84B14001D53CD /* Color.swift */; };
+		4B107AD52AE84CB2001D53CD /* NeuePlak-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B107ACC2AE84CB2001D53CD /* NeuePlak-SemiBold.ttf */; };
+		4B107AD62AE84CB2001D53CD /* NeuePlak-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B107ACD2AE84CB2001D53CD /* NeuePlak-Black.ttf */; };
+		4B107AD72AE84CB2001D53CD /* NeuePlak-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B107ACE2AE84CB2001D53CD /* NeuePlak-Regular.ttf */; };
+		4B107AD82AE84CB2001D53CD /* NeuePlak-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B107ACF2AE84CB2001D53CD /* NeuePlak-Light.ttf */; };
+		4B107AD92AE84CB2001D53CD /* NeuePlak-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B107AD02AE84CB2001D53CD /* NeuePlak-Bold.ttf */; };
+		4B107ADA2AE84CB2001D53CD /* NeuePlak-ExtraBlack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B107AD12AE84CB2001D53CD /* NeuePlak-ExtraBlack.ttf */; };
+		4B107ADB2AE84CB2001D53CD /* NeuePlak-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B107AD22AE84CB2001D53CD /* NeuePlak-Thin.ttf */; };
+		4B107ADC2AE84CB2001D53CD /* NeuePlak-UltraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B107AD32AE84CB2001D53CD /* NeuePlak-UltraLight.ttf */; };
+		4B107ADD2AE84CB2001D53CD /* NeuePlakText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B107AD42AE84CB2001D53CD /* NeuePlakText-Regular.ttf */; };
+		4B107AE02AE84EBB001D53CD /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B107ADF2AE84EBB001D53CD /* Font.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +31,17 @@
 		4B107AB62AE846C2001D53CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B107AB92AE846C2001D53CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4B107AC92AE84B14001D53CD /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		4B107ACC2AE84CB2001D53CD /* NeuePlak-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeuePlak-SemiBold.ttf"; sourceTree = "<group>"; };
+		4B107ACD2AE84CB2001D53CD /* NeuePlak-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeuePlak-Black.ttf"; sourceTree = "<group>"; };
+		4B107ACE2AE84CB2001D53CD /* NeuePlak-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeuePlak-Regular.ttf"; sourceTree = "<group>"; };
+		4B107ACF2AE84CB2001D53CD /* NeuePlak-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeuePlak-Light.ttf"; sourceTree = "<group>"; };
+		4B107AD02AE84CB2001D53CD /* NeuePlak-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeuePlak-Bold.ttf"; sourceTree = "<group>"; };
+		4B107AD12AE84CB2001D53CD /* NeuePlak-ExtraBlack.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeuePlak-ExtraBlack.ttf"; sourceTree = "<group>"; };
+		4B107AD22AE84CB2001D53CD /* NeuePlak-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeuePlak-Thin.ttf"; sourceTree = "<group>"; };
+		4B107AD32AE84CB2001D53CD /* NeuePlak-UltraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeuePlak-UltraLight.ttf"; sourceTree = "<group>"; };
+		4B107AD42AE84CB2001D53CD /* NeuePlakText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeuePlakText-Regular.ttf"; sourceTree = "<group>"; };
+		4B107ADE2AE84CCE001D53CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4B107ADF2AE84EBB001D53CD /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +74,7 @@
 		4B107AB12AE846BF001D53CD /* Cocktails */ = {
 			isa = PBXGroup;
 			children = (
+				4B107ADE2AE84CCE001D53CD /* Info.plist */,
 				4B107AC02AE848EE001D53CD /* App */,
 				4B107AC82AE84B06001D53CD /* Extension */,
 				4B107AC12AE84909001D53CD /* Interactor */,
@@ -106,6 +128,7 @@
 		4B107AC42AE8492E001D53CD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4B107ACB2AE84C85001D53CD /* Fonts */,
 				4B107AB62AE846C2001D53CD /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -138,8 +161,25 @@
 			isa = PBXGroup;
 			children = (
 				4B107AC92AE84B14001D53CD /* Color.swift */,
+				4B107ADF2AE84EBB001D53CD /* Font.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		4B107ACB2AE84C85001D53CD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4B107ACD2AE84CB2001D53CD /* NeuePlak-Black.ttf */,
+				4B107AD02AE84CB2001D53CD /* NeuePlak-Bold.ttf */,
+				4B107AD12AE84CB2001D53CD /* NeuePlak-ExtraBlack.ttf */,
+				4B107ACF2AE84CB2001D53CD /* NeuePlak-Light.ttf */,
+				4B107ACE2AE84CB2001D53CD /* NeuePlak-Regular.ttf */,
+				4B107ACC2AE84CB2001D53CD /* NeuePlak-SemiBold.ttf */,
+				4B107AD22AE84CB2001D53CD /* NeuePlak-Thin.ttf */,
+				4B107AD32AE84CB2001D53CD /* NeuePlak-UltraLight.ttf */,
+				4B107AD42AE84CB2001D53CD /* NeuePlakText-Regular.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +240,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B107AD52AE84CB2001D53CD /* NeuePlak-SemiBold.ttf in Resources */,
+				4B107AD62AE84CB2001D53CD /* NeuePlak-Black.ttf in Resources */,
 				4B107ABA2AE846C2001D53CD /* Preview Assets.xcassets in Resources */,
+				4B107AD72AE84CB2001D53CD /* NeuePlak-Regular.ttf in Resources */,
+				4B107AD92AE84CB2001D53CD /* NeuePlak-Bold.ttf in Resources */,
+				4B107AD82AE84CB2001D53CD /* NeuePlak-Light.ttf in Resources */,
+				4B107ADA2AE84CB2001D53CD /* NeuePlak-ExtraBlack.ttf in Resources */,
+				4B107ADD2AE84CB2001D53CD /* NeuePlakText-Regular.ttf in Resources */,
+				4B107ADC2AE84CB2001D53CD /* NeuePlak-UltraLight.ttf in Resources */,
+				4B107ADB2AE84CB2001D53CD /* NeuePlak-Thin.ttf in Resources */,
 				4B107AB72AE846C2001D53CD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B107AE02AE84EBB001D53CD /* Font.swift in Sources */,
 				4B107AB52AE846BF001D53CD /* ContentView.swift in Sources */,
 				4B107AB32AE846BF001D53CD /* CocktailsApp.swift in Sources */,
 				4B107ACA2AE84B14001D53CD /* Color.swift in Sources */,
@@ -351,6 +401,7 @@
 				DEVELOPMENT_TEAM = 3RQAYNAD56;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Cocktails/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -380,6 +431,7 @@
 				DEVELOPMENT_TEAM = 3RQAYNAD56;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Cocktails/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
