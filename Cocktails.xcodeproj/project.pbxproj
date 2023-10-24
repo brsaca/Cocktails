@@ -32,6 +32,7 @@
 		4B107AF12AE87D41001D53CD /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4B107AF02AE87D41001D53CD /* Kingfisher */; };
 		4B107AF42AE87E1F001D53CD /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 4B107AF32AE87E1F001D53CD /* SwiftUIX */; };
 		4B107AF62AE88132001D53CD /* ConnectionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B107AF52AE88132001D53CD /* ConnectionInteractor.swift */; };
+		4B107AF82AE886F5001D53CD /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B107AF72AE886F5001D53CD /* Config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		4B107AEB2AE8750A001D53CD /* Previews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Previews.swift; sourceTree = "<group>"; };
 		4B107AED2AE8776F001D53CD /* CocktailCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailCard.swift; sourceTree = "<group>"; };
 		4B107AF52AE88132001D53CD /* ConnectionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionInteractor.swift; sourceTree = "<group>"; };
+		4B107AF72AE886F5001D53CD /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 			children = (
 				4B107ACB2AE84C85001D53CD /* Fonts */,
 				4B107AB62AE846C2001D53CD /* Assets.xcassets */,
+				4B107AF72AE886F5001D53CD /* Config.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				4B107AE22AE85720001D53CD /* OptionsListView.swift in Sources */,
 				4B107AF62AE88132001D53CD /* ConnectionInteractor.swift in Sources */,
 				4B107AE02AE84EBB001D53CD /* Font.swift in Sources */,
+				4B107AF82AE886F5001D53CD /* Config.swift in Sources */,
 				4B107AB52AE846BF001D53CD /* ContentView.swift in Sources */,
 				4B107AEA2AE87464001D53CD /* Difficulty.swift in Sources */,
 				4B107AB32AE846BF001D53CD /* CocktailsApp.swift in Sources */,

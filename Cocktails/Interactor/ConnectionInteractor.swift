@@ -14,11 +14,11 @@ protocol ConnectionInteractor {
 struct Connection: ConnectionInteractor {
     func loadCocktails(completion: @escaping (Result<[Cocktail], Error>) -> Void) {
         let headers = [
-            "X-RapidAPI-Key": "",
-            "X-RapidAPI-Host": ""
+            "X-RapidAPI-Key": Config.rapidKey,
+            "X-RapidAPI-Host": Config.rapidHost
         ]
 
-        guard let url = URL(string: "") else {
+        guard let url = URL(string: Config.rapidUrl) else {
             completion(.failure(NSError(domain: "Invalid URL", code: 0, userInfo: nil)))
             return
         }
