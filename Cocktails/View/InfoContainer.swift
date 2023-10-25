@@ -44,6 +44,7 @@ struct InfoContainer: View {
             }
         }
         .padding(.top, 40)
+        .foregroundStyle(Color.text)
         .padding(.horizontal, 30)
         .background(.white)
         .cornerRadius(30)
