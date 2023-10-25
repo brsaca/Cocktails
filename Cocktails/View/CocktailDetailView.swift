@@ -14,28 +14,37 @@ struct CocktailDetailView: View {
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
-            ZStack(alignment: .topLeading) {
-                // Image
-                KFImage(cocktail.image)
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: .infinity, height: UIScreen.main.bounds.size.height * 0.4, alignment: .topLeading)
-                
-                // Like
-                HStack {
-                    Spacer()
-                    LikeButton(action: {}, size: 70)
+            VStack(spacing:0) {
+                ZStack(alignment: .topLeading) {
+                    // Image
+                    KFImage(cocktail.image)
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: .infinity, height: UIScreen.main.bounds.size.height * 0.4, alignment: .topLeading)
+                    
+                    // Like
+                    HStack {
+                        Image(systemName: "arrow.left")
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                            .foregroundStyle(.white)
+                            .onTapGesture {
+                                
+                            }
+                        
+                        Spacer()
+                        
+                        LikeButton(action: {}, size: 70)
+                    }
+                    .padding(.top, 60)
+                    .padding(.horizontal, 30)
                 }
-                .padding(.top, 60)
-                .padding(.trailing, 30)
                 
                 // Info Container
                 InfoContainer(cocktail: cocktail)
-                .offset(y: UIScreen.main.bounds.size.height * 0.5)
-                
-                // Cook Button
                 
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
         }
         .ignoresSafeArea(.all)
     }
