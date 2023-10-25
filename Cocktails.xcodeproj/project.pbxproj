@@ -33,6 +33,8 @@
 		4B107AF42AE87E1F001D53CD /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 4B107AF32AE87E1F001D53CD /* SwiftUIX */; };
 		4B107AF62AE88132001D53CD /* ConnectionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B107AF52AE88132001D53CD /* ConnectionInteractor.swift */; };
 		4B107AF82AE886F5001D53CD /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B107AF72AE886F5001D53CD /* Config.swift */; };
+		4B9CAB792AE96CE300ED1239 /* CocktailDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9CAB782AE96CE300ED1239 /* CocktailDetailView.swift */; };
+		4B9CAB7E2AE9725C00ED1239 /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9CAB7D2AE9725C00ED1239 /* LikeButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,8 @@
 		4B107AED2AE8776F001D53CD /* CocktailCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailCard.swift; sourceTree = "<group>"; };
 		4B107AF52AE88132001D53CD /* ConnectionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionInteractor.swift; sourceTree = "<group>"; };
 		4B107AF72AE886F5001D53CD /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		4B9CAB782AE96CE300ED1239 /* CocktailDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailDetailView.swift; sourceTree = "<group>"; };
+		4B9CAB7D2AE9725C00ED1239 /* LikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,8 +169,9 @@
 		4B107AC52AE8493B001D53CD /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4B107AC72AE849F5001D53CD /* Components */,
-				4B107AB42AE846BF001D53CD /* ContentView.swift */,
+				4B9CAB7C2AE9724C00ED1239 /* Components */,
+				4B9CAB7B2AE96FCA00ED1239 /* Detail */,
+				4B9CAB7A2AE96FBC00ED1239 /* Home */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -211,6 +216,31 @@
 				4B107AD42AE84CB2001D53CD /* NeuePlakText-Regular.ttf */,
 			);
 			name = Fonts;
+			sourceTree = "<group>";
+		};
+		4B9CAB7A2AE96FBC00ED1239 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4B107AB42AE846BF001D53CD /* ContentView.swift */,
+				4B107AC72AE849F5001D53CD /* Components */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		4B9CAB7B2AE96FCA00ED1239 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				4B9CAB782AE96CE300ED1239 /* CocktailDetailView.swift */,
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
+		4B9CAB7C2AE9724C00ED1239 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4B9CAB7D2AE9725C00ED1239 /* LikeButton.swift */,
+			);
+			name = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,6 +333,7 @@
 				4B107AE82AE8741B001D53CD /* Method.swift in Sources */,
 				4B107AEE2AE8776F001D53CD /* CocktailCard.swift in Sources */,
 				4B107AE62AE872EC001D53CD /* Cocktail.swift in Sources */,
+				4B9CAB792AE96CE300ED1239 /* CocktailDetailView.swift in Sources */,
 				4B107AE22AE85720001D53CD /* OptionsListView.swift in Sources */,
 				4B107AF62AE88132001D53CD /* ConnectionInteractor.swift in Sources */,
 				4B107AE02AE84EBB001D53CD /* Font.swift in Sources */,
@@ -312,6 +343,7 @@
 				4B107AB32AE846BF001D53CD /* CocktailsApp.swift in Sources */,
 				4B107AE42AE85C32001D53CD /* TabBarView.swift in Sources */,
 				4B107AEC2AE8750A001D53CD /* Previews.swift in Sources */,
+				4B9CAB7E2AE9725C00ED1239 /* LikeButton.swift in Sources */,
 				4B107ACA2AE84B14001D53CD /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,19 +17,10 @@ struct CocktailCard: View {
         VStack(alignment: .leading) {
             HStack {
                 Spacer()
-                Button {
-                    
-                } label: {
-                    ZStack {
-                        Circle()
-                            .frame(width: 50)
-                            .foregroundColor(Color.gray.opacity(0.5))
-                        Image(systemName: "heart.fill")
-                            .foregroundColor(.yellow)
-                    }
-                }
+                
+                LikeButton(action: {}, size: 70)
             }
-            .padding(30)
+            .padding(20)
             Spacer()
             HStack {
                 VStack(alignment: .leading) {
