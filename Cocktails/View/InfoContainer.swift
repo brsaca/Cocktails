@@ -30,7 +30,18 @@ struct InfoContainer: View {
                 getSteps(for: methodSteps)
             }
             
-            Spacer()
+            // Cook Button
+            Button {
+                
+            } label: {
+                Text("Start Cook!")
+                    .font(.neue(.text, size: 30))
+                    .foregroundStyle(Color.cBlack)
+                    .frame(maxWidth: .infinity, minHeight: 80)
+                    .background(Color.cYellow)
+                    .cornerRadius(20)
+                    .padding()
+            }
         }
         .padding(.top, 40)
         .padding(.horizontal, 30)
