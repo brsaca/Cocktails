@@ -35,6 +35,7 @@
 		4B107AF82AE886F5001D53CD /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B107AF72AE886F5001D53CD /* Config.swift */; };
 		4B9CAB792AE96CE300ED1239 /* CocktailDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9CAB782AE96CE300ED1239 /* CocktailDetailView.swift */; };
 		4B9CAB7E2AE9725C00ED1239 /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9CAB7D2AE9725C00ED1239 /* LikeButton.swift */; };
+		4B9CAB812AE97ABC00ED1239 /* InfoContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9CAB802AE97ABC00ED1239 /* InfoContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		4B107AF72AE886F5001D53CD /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		4B9CAB782AE96CE300ED1239 /* CocktailDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailDetailView.swift; sourceTree = "<group>"; };
 		4B9CAB7D2AE9725C00ED1239 /* LikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
+		4B9CAB802AE97ABC00ED1239 /* InfoContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +232,7 @@
 		4B9CAB7B2AE96FCA00ED1239 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				4B9CAB7F2AE97AA300ED1239 /* Components */,
 				4B9CAB782AE96CE300ED1239 /* CocktailDetailView.swift */,
 			);
 			name = Detail;
@@ -239,6 +242,14 @@
 			isa = PBXGroup;
 			children = (
 				4B9CAB7D2AE9725C00ED1239 /* LikeButton.swift */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		4B9CAB7F2AE97AA300ED1239 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4B9CAB802AE97ABC00ED1239 /* InfoContainer.swift */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -343,6 +354,7 @@
 				4B107AB32AE846BF001D53CD /* CocktailsApp.swift in Sources */,
 				4B107AE42AE85C32001D53CD /* TabBarView.swift in Sources */,
 				4B107AEC2AE8750A001D53CD /* Previews.swift in Sources */,
+				4B9CAB812AE97ABC00ED1239 /* InfoContainer.swift in Sources */,
 				4B9CAB7E2AE9725C00ED1239 /* LikeButton.swift in Sources */,
 				4B107ACA2AE84B14001D53CD /* Color.swift in Sources */,
 			);
