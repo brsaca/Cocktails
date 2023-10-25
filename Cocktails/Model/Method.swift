@@ -8,7 +8,9 @@
 import Foundation
 
 struct Method: Codable {
-    let step1, step2, step3: String?
+    let step1: String?
+    let step2: String?
+    let step3: String?
 
     enum CodingKeys: String, CodingKey {
         case step1 = "Step 1"
