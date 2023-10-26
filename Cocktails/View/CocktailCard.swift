@@ -22,25 +22,19 @@ struct CocktailCard: View {
             }
             .padding(20)
             Spacer()
-            HStack {
-                VStack(alignment: .leading) {
-                    Text(cocktail.title)
-                        .font(.neue(.text, size: 26))
-                        .frame(maxHeight: 70, alignment:.leading)
-                    Text(cocktail.difficulty.detail)
-                        .font(.neue(.thin, size: 18))
-                }
-                .foregroundStyle(Color.cBlack)
-                .padding(.leading, 20)
-                .padding(.vertical)
-                
-                Spacer()
-                
-                Text(cocktail.simplifiedTime)
-                    .font(.neue(.semibold, size: 20))
-                    .foregroundStyle(Color.cGreen)
-                    .padding(.trailing, 20)
+            
+            VStack(alignment: .leading) {
+                Text(cocktail.title)
+                    .font(.neue(.text, size: 26))
+                    .frame(maxWidth: .infinity, alignment:.leading)
+                Text(cocktail.difficulty.detail)
+                    .font(.neue(.thin, size: 18))
+                    .frame(maxWidth: .infinity, alignment:.leading)
             }
+            .foregroundStyle(Color.cBlack)
+            .frame(maxHeight: 80)
+            .padding(.vertical)
+            .padding(.horizontal)
             .background(
                 VisualEffectBlurView(blurStyle: .systemMaterial)
             )
