@@ -10,18 +10,20 @@ import Kingfisher
 
 struct CocktailDetailView: View {
     // MARK: View Properties
-    let cocktail: Cocktail
+    let cocktailId: String
+    @State var vm = CocktailDetailViewModel()
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(spacing:0) {
                 ZStack(alignment: .topLeading) {
                     // Image
-                    KFImage(cocktail.image)
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: .infinity, height: UIScreen.main.bounds.size.height * 0.4, alignment: .topLeading)
-                    
+                    if let image = vm.cocktailDetailLogic.cocktail?.image {
+                        KFImage(image)
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: .infinity, height: UIScreen.main.bounds.size.height * 0.4, alignment: .topLeading)
+                    }
                     // Like
                     HStack {
                         Image(systemName: "arrow.left")
@@ -41,10 +43,15 @@ struct CocktailDetailView: View {
                 }
                 
                 // Info Container
-                InfoContainer(cocktail: cocktail)
+                if let cocktail = vm.cocktailDetailLogic.cocktail {
+                    InfoContainer(cocktail: cocktail)
+                }
                 
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+            .task {
+                await vm.cocktailDetailLogic.fetchCocktail(for: cocktailId)
+            }
         }
         .ignoresSafeArea(.all)
     }
@@ -52,5 +59,5 @@ struct CocktailDetailView: View {
 
 // MARK: - Previews
 #Preview {
-    CocktailDetailView(cocktail: Cocktail.mock)
+    CocktailDetailView(cocktailId: Cocktail.mock.id)
 }

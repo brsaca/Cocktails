@@ -42,4 +42,8 @@ struct ConnectionPreview: ConnectionInteractor {
             Cocktail.mock
         ]
     }
+    
+    func loadCocktailDetail(for id: String) async throws -> Cocktail {
+        return Cocktail.mock
+    }
 }

@@ -47,7 +47,7 @@ struct ContentView: View {
                 TabBarView(selectedTab: $tabActive)
             }
             .task {
-                await vm.contentLogic.fetchCocktails()
+              //  await vm.contentLogic.fetchCocktails()
             }
         }
     }
@@ -75,7 +75,7 @@ extension ContentView{
             LazyHStack(spacing: 20) {
                 ForEach(vm.contentLogic.cocktails) { cocktail in
                     NavigationLink {
-                        CocktailDetailView(cocktail: cocktail)
+                        CocktailDetailView(cocktailId: cocktail.id)
                             .navigationBarBackButtonHidden(true)
                     } label: {
                         CocktailCard(cocktail: cocktail)
