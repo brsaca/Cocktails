@@ -36,6 +36,8 @@
 		4B9CAB792AE96CE300ED1239 /* CocktailDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9CAB782AE96CE300ED1239 /* CocktailDetailView.swift */; };
 		4B9CAB7E2AE9725C00ED1239 /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9CAB7D2AE9725C00ED1239 /* LikeButton.swift */; };
 		4B9CAB812AE97ABC00ED1239 /* InfoContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9CAB802AE97ABC00ED1239 /* InfoContainer.swift */; };
+		4B9CAB832AE9A49900ED1239 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9CAB822AE9A49900ED1239 /* ContentViewModel.swift */; };
+		4B9CAB852AE9A4D900ED1239 /* ContentLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9CAB842AE9A4D900ED1239 /* ContentLogic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +70,8 @@
 		4B9CAB782AE96CE300ED1239 /* CocktailDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailDetailView.swift; sourceTree = "<group>"; };
 		4B9CAB7D2AE9725C00ED1239 /* LikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
 		4B9CAB802AE97ABC00ED1239 /* InfoContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoContainer.swift; sourceTree = "<group>"; };
+		4B9CAB822AE9A49900ED1239 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		4B9CAB842AE9A4D900ED1239 /* ContentLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentLogic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +158,7 @@
 		4B107AC32AE84921001D53CD /* ModelLogic */ = {
 			isa = PBXGroup;
 			children = (
+				4B9CAB842AE9A4D900ED1239 /* ContentLogic.swift */,
 			);
 			path = ModelLogic;
 			sourceTree = "<group>";
@@ -181,6 +186,7 @@
 		4B107AC62AE8494A001D53CD /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				4B9CAB822AE9A49900ED1239 /* ContentViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -344,8 +350,10 @@
 				4B107AE82AE8741B001D53CD /* Method.swift in Sources */,
 				4B107AEE2AE8776F001D53CD /* CocktailCard.swift in Sources */,
 				4B107AE62AE872EC001D53CD /* Cocktail.swift in Sources */,
+				4B9CAB832AE9A49900ED1239 /* ContentViewModel.swift in Sources */,
 				4B9CAB792AE96CE300ED1239 /* CocktailDetailView.swift in Sources */,
 				4B107AE22AE85720001D53CD /* OptionsListView.swift in Sources */,
+				4B9CAB852AE9A4D900ED1239 /* ContentLogic.swift in Sources */,
 				4B107AF62AE88132001D53CD /* ConnectionInteractor.swift in Sources */,
 				4B107AE02AE84EBB001D53CD /* Font.swift in Sources */,
 				4B107AF82AE886F5001D53CD /* Config.swift in Sources */,

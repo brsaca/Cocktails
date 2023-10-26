@@ -12,6 +12,7 @@ struct ContentView: View {
     // MARK: View Properties
     @State private var selection: Options = .New
     @State private var tabActive: Tab = .home
+    @State var vm = ContentViewModel()
     
     var body: some View {
         VStack {
@@ -25,11 +26,27 @@ struct ContentView: View {
                 .padding(.top, 20)
             
             // Drinks
-            cocktailsList
-                .padding(.leading, 20)
-            
+            if vm.contentLogic.isLoading {
+                Spacer()
+                ProgressView()
+                Spacer()
+            } else {
+                if vm.contentLogic.showEmptyView {
+                    ContentUnavailableView(
+                        "Error",
+                        systemImage: "exclamationmark.warninglight",
+                        description: Text(vm.contentLogic.messageError)
+                    )
+                } else {
+                    cocktailsList
+                        .padding(.leading, 20)
+                }
+            }
             // TabBar
             TabBarView(selectedTab: $tabActive)
+        }
+        .task {
+            await vm.contentLogic.fetchCocktails()
         }
     }
 }
@@ -54,8 +71,8 @@ extension ContentView{
     var cocktailsList: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             LazyHStack(spacing: 20) {
-                ForEach(1..<6) { cocktailIndex in
-                    CocktailCard(cocktail: Cocktail.mock)
+                ForEach(vm.contentLogic.cocktails) { cocktail in
+                    CocktailCard(cocktail: cocktail)
                 }
             }
         }
