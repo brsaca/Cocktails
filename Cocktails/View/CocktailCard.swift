@@ -26,9 +26,11 @@ struct CocktailCard: View {
                 VStack(alignment: .leading) {
                     Text(cocktail.title)
                         .font(.neue(.text, size: 26))
+                        .frame(maxHeight: 70, alignment:.leading)
                     Text(cocktail.difficulty.detail)
                         .font(.neue(.thin, size: 18))
                 }
+                .foregroundStyle(Color.cBlack)
                 .padding(.leading, 20)
                 .padding(.vertical)
                 
