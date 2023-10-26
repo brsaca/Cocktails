@@ -15,11 +15,7 @@ final class CocktailDetailLogic {
     
     var cocktail: Cocktail?
     
-    var showEmptyView = false
-    
     var isLoading = false
-    
-    var messageError = ""
     
     init(connection: ConnectionInteractor = Connection()) {
         self.connection = connection
@@ -32,8 +28,6 @@ final class CocktailDetailLogic {
             self.cocktail = try await connection.loadCocktailDetail(for: id)
             self.isLoading = false
         } catch {
-            self.messageError = error.localizedDescription
-            self.showEmptyView = true
             self.isLoading = false
         }
     }
