@@ -59,5 +59,5 @@ struct CocktailDetailView: View {
 
 // MARK: - Previews
 #Preview {
-    CocktailDetailView(cocktailId: Cocktail.mock.id)
+    CocktailDetailView(cocktailId: Cocktail.mock.id, vm: CocktailDetailViewModel(cocktailDetailLogic: CocktailDetailLogic(connection: ConnectionPreview())))
 }

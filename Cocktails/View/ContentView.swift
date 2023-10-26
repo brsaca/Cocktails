@@ -47,7 +47,7 @@ struct ContentView: View {
                 TabBarView(selectedTab: $tabActive)
             }
             .task {
-              //  await vm.contentLogic.fetchCocktails()
+                await vm.contentLogic.fetchCocktails()
             }
         }
     }
@@ -88,5 +88,5 @@ extension ContentView{
 
 // MARK: - Previews
 #Preview {
-    ContentView()
+    ContentView(vm: ContentViewModel(contentLogic: ContentLogic(connection: ConnectionPreview())))
 }

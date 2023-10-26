@@ -244,8 +244,8 @@
 		4B9CAB7B2AE96FCA00ED1239 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				4B9CAB7F2AE97AA300ED1239 /* Components */,
 				4B9CAB782AE96CE300ED1239 /* CocktailDetailView.swift */,
+				4B9CAB7F2AE97AA300ED1239 /* Components */,
 			);
 			name = Detail;
 			sourceTree = "<group>";
