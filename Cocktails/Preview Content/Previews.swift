@@ -32,8 +32,8 @@ extension Cocktail {
 }
 
 struct ConnectionPreview: ConnectionInteractor {
-    func loadCocktails(completion: @escaping (Result<[Cocktail], Error>) -> Void) {
-        let cocktails: [Cocktail] = [
+    func loadCocktails() async throws -> [Cocktail]{
+        return [
             Cocktail.mock,
             Cocktail.mock,
             Cocktail.mock,
@@ -41,6 +41,5 @@ struct ConnectionPreview: ConnectionInteractor {
             Cocktail.mock,
             Cocktail.mock
         ]
-       completion(.success(cocktails))
     }
 }

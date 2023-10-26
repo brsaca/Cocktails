@@ -8,52 +8,40 @@
 import Foundation
 
 protocol ConnectionInteractor {
-    func loadCocktails(completion: @escaping (Result<[Cocktail], Error>) -> Void)
+    func loadCocktails() async throws -> [Cocktail]
 }
 
 struct Connection: ConnectionInteractor {
-    func loadCocktails(completion: @escaping (Result<[Cocktail], Error>) -> Void) {
+    
+    enum Errors: Error {
+        case invalidUrl
+        case network(Error)
+        case decoding(Error)
+    }
+    
+    func loadCocktails() async throws -> [Cocktail] {
         let headers = [
             "X-RapidAPI-Key": Config.rapidKey,
             "X-RapidAPI-Host": Config.rapidHost
         ]
-
+        
         guard let url = URL(string: Config.rapidUrl) else {
-            completion(.failure(NSError(domain: "Invalid URL", code: 0, userInfo: nil)))
-            return
+            throw Errors.invalidUrl
         }
-
+        
         var request = URLRequest(url: url)
-        request.httpMethod = "GET"
         request.allHTTPHeaderFields = headers
-
-        let session = URLSession.shared
-        let dataTask = session.dataTask(with: request) { data, response, error in
-            if let error = error {
-                completion(.failure(error))
-                return
-            }
-
-            guard let httpResponse = response as? HTTPURLResponse,
-                  (200...299).contains(httpResponse.statusCode) else {
-                completion(.failure(NSError(domain: "Invalid response", code: 0, userInfo: nil)))
-                return
-            }
-
-            guard let jsonData = data else {
-                completion(.failure(NSError(domain: "No data received", code: 0, userInfo: nil)))
-                return
-            }
-
-            do {
-                let cocktails = try JSONDecoder().decode([Cocktail].self, from: jsonData)
-                completion(.success(cocktails))
-            } catch {
-                completion(.failure(error))
+        
+        do {
+            let (data, _) = try await URLSession.shared.data(for: request)
+            return try JSONDecoder().decode([Cocktail].self, from: data)
+        } catch {
+            if let decodingError = error as? DecodingError {
+                throw Errors.decoding(decodingError)
+            } else {
+                throw Errors.network(error)
             }
         }
-
-        dataTask.resume()
     }
-
+    
 }
