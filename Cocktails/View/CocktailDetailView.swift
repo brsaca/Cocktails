@@ -11,6 +11,7 @@ import Kingfisher
 struct CocktailDetailView: View {
     // MARK: View Properties
     let cocktailId: String
+    @Environment(\.dismiss) var dismiss
     @State var vm = CocktailDetailViewModel()
     
     var body: some View {
@@ -31,7 +32,7 @@ struct CocktailDetailView: View {
                             .frame(width: 40, height: 40)
                             .foregroundStyle(.white)
                             .onTapGesture {
-                                
+                                dismiss()
                             }
                         
                         Spacer()
