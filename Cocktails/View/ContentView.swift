@@ -15,38 +15,40 @@ struct ContentView: View {
     @State var vm = ContentViewModel()
     
     var body: some View {
-        VStack {
-            // NavBar
-            navBar
-                .padding(.horizontal, 20)
-            
-            // Options
-            OptionsListView(selection: $selection)
-                .padding(.horizontal, 40)
-                .padding(.top, 20)
-            
-            // Drinks
-            if vm.contentLogic.isLoading {
-                Spacer()
-                ProgressView()
-                Spacer()
-            } else {
-                if vm.contentLogic.showEmptyView {
-                    ContentUnavailableView(
-                        "Error",
-                        systemImage: "exclamationmark.warninglight",
-                        description: Text(vm.contentLogic.messageError)
-                    )
+        NavigationStack {
+            VStack {
+                // NavBar
+                navBar
+                    .padding(.horizontal, 20)
+                
+                // Options
+                OptionsListView(selection: $selection)
+                    .padding(.horizontal, 40)
+                    .padding(.top, 20)
+                
+                // Drinks
+                if vm.contentLogic.isLoading {
+                    Spacer()
+                    ProgressView()
+                    Spacer()
                 } else {
-                    cocktailsList
-                        .padding(.leading, 20)
+                    if vm.contentLogic.showEmptyView {
+                        ContentUnavailableView(
+                            "Error",
+                            systemImage: "exclamationmark.warninglight",
+                            description: Text(vm.contentLogic.messageError)
+                        )
+                    } else {
+                        cocktailsList
+                            .padding(.leading, 20)
+                    }
                 }
+                // TabBar
+                TabBarView(selectedTab: $tabActive)
             }
-            // TabBar
-            TabBarView(selectedTab: $tabActive)
-        }
-        .task {
-            await vm.contentLogic.fetchCocktails()
+            .task {
+                await vm.contentLogic.fetchCocktails()
+            }
         }
     }
 }
@@ -72,7 +74,12 @@ extension ContentView{
         ScrollView(.horizontal, showsIndicators: false) {
             LazyHStack(spacing: 20) {
                 ForEach(vm.contentLogic.cocktails) { cocktail in
-                    CocktailCard(cocktail: cocktail)
+                    NavigationLink {
+                        CocktailDetailView(cocktail: cocktail)
+                            .navigationBarBackButtonHidden(true)
+                    } label: {
+                        CocktailCard(cocktail: cocktail)
+                    }
                 }
             }
         }
