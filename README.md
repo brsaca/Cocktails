@@ -26,15 +26,15 @@ App using dribbble design, connect with API Rapid and using [Cocktail App](https
 
 ## 📝 Steps to run demo
 - Create an account on [rapidApi](https://rapidapi.com)
-- Use [api cocktails](https://rapidapi.com/rapihub-rapihub-default/api/the-cocktail-db3)
+- Use [api cocktails](https://rapidapi.com/Glavier/api/spotify23/)
 - Create a Config.swift file where you should put your keys
 ```swift
 import Foundation
 
 struct Config {
     static let rapidKey = ""
-    static let rapidHost = "the-cocktail-db3.p.rapidapi.com"
-    static let rapidUrl = "https://the-cocktail-db3.p.rapidapi.com/"
+    static let rapidHost = "spotify23.p.rapidapi.com"
+    static let rapidUrl = "https://spotify23.p.rapidapi.comm/"
 }
 ```
 
